@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Araçları Rehberi - 606+ Yapay Zeka Aracı</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-robot"></i>
+                <span>AI Rehberi</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Ana Sayfa</a>
+                <a href="#tools" class="nav-link">Yapay Zekalar</a>
+                <a href="#prompts" class="nav-link">Prompts</a>
+                <a href="#categories" class="nav-link">Kategoriler</a>
+                <a href="#contact" class="nav-link">İletişim</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-in">
+                    <span class="gradient-text">606+ Yapay Zeka Aracı</span><br>
+                    <span class="hero-subtitle">800+ Prompt ile Birlikte</span>
+                </h1>
+                <p class="hero-description animate-fade-in-delay">
+                    En kapsamlı Türkçe yapay zeka araçları rehberi. Her kategori için özel prompts ve detaylı açıklamalar.
+                </p>
+                <div class="hero-buttons animate-fade-in-delay-2">
+                    <button class="btn btn-primary" onclick="scrollToSection('tools')">
+                        <i class="fas fa-search"></i>
+                        Araçları Keşfet
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('prompts')">
+                        <i class="fas fa-magic"></i>
+                        Prompts Gör
+                    </button>
+                </div>
+                <div class="hero-stats animate-fade-in-delay-3">
+                    <div class="stat">
+                        <span class="stat-number">606+</span>
+                        <span class="stat-label">Yapay Zeka Aracı</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">800+</span>
+                        <span class="stat-label">AI Prompt</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label">Kategori</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-cards">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-brain"></i>
+                        <span>ChatGPT</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-image"></i>
+                        <span>DALL-E</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-code"></i>
+                        <span>GitHub Copilot</span>
+                    </div>
+                    <div class="floating-card card-4">
+                        <i class="fas fa-video"></i>
+                        <span>Runway</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2 class="section-title">Kategoriler</h2>
+            <p class="section-subtitle">Yapay zeka araçlarını kategori bazında keşfedin</p>
+            
+            <div class="categories-grid">
+                <div class="category-card" data-category="yazma">
+                    <div class="category-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>Yazma & İçerik</h3>
+                    <p>85+ araç</p>
+                    <div class="category-preview">
+                        ChatGPT, Jasper, Copy.ai, Writesonic...
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="gorsel">
+                    <div class="category-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Görsel & Tasarım</h3>
+                    <p>112+ araç</p>
+                    <div class="category-preview">
+                        DALL-E, Midjourney, Canva AI, Runway...
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="video">
+                    <div class="category-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video & Animasyon</h3>
+                    <p>67+ araç</p>
+                    <div class="category-preview">
+                        Synthesia, Pictory, Runway, Luma...
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="kod">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Kodlama & Geliştirme</h3>
+                    <p>43+ araç</p>
+                    <div class="category-preview">
+                        GitHub Copilot, Replit, CodeT5...
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="ses">
+                    <div class="category-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Ses & Müzik</h3>
+                    <p>38+ araç</p>
+                    <div class="category-preview">
+                        ElevenLabs, Murf, Beatoven, AIVA...
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="analiz">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analiz & Veri</h3>
+                    <p>52+ araç</p>
+                    <div class="category-preview">
+                        Tableau AI, DataRobot, Perplexity...
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="egitim">
+                    <div class="category-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Eğitim & Öğrenme</h3>
+                    <p>29+ araç</p>
+                    <div class="category-preview">
+                        Coursera AI, Khan Academy, Quizlet...
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="is">
+                    <div class="category-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>İş & Verimlilik</h3>
+                    <p>74+ araç</p>
+                    <div class="category-preview">
+                        Notion AI, Calendly, Grammarly...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Tools Section -->
+    <section id="tools" class="tools">
+        <div class="container">
+            <h2 class="section-title">Yapay Zeka Araçları</h2>
+            <p class="section-subtitle">606+ yapay zeka aracını keşfedin ve doğru aracı bulun</p>
+            
+            <!-- Search and Filter -->
+            <div class="search-filter-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="toolSearch" placeholder="Araç ara... (örn: ChatGPT, DALL-E)">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Tümü</button>
+                    <button class="filter-btn" data-filter="yazma">Yazma</button>
+                    <button class="filter-btn" data-filter="gorsel">Görsel</button>
+                    <button class="filter-btn" data-filter="video">Video</button>
+                    <button class="filter-btn" data-filter="kod">Kod</button>
+                    <button class="filter-btn" data-filter="ses">Ses</button>
+                </div>
+            </div>
+            
+            <!-- Tools Grid -->
+            <div class="tools-grid" id="toolsGrid">
+                <!-- Tools will be dynamically loaded -->
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="btn btn-outline" id="loadMoreTools">
+                    <i class="fas fa-plus"></i>
+                    Daha Fazla Göster
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prompts Section -->
+    <section id="prompts" class="prompts">
+        <div class="container">
+            <h2 class="section-title">AI Prompts Kütüphanesi</h2>
+            <p class="section-subtitle">800+ hazır prompt ile AI araçlarınızdan en iyi verimi alın</p>
+            
+            <div class="prompts-container">
+                <div class="prompts-sidebar">
+                    <h3>Prompt Kategorileri</h3>
+                    <div class="prompt-categories">
+                        <button class="prompt-category-btn active" data-category="all">
+                            <i class="fas fa-th"></i>
+                            Tüm Prompts
+                            <span class="count">80+</span>
+                        </button>
+                        <button class="prompt-category-btn" data-category="content">
+                            <i class="fas fa-pen"></i>
+                            İçerik Üretimi
+                            <span class="count">125</span>
+                        </button>
+                        <button class="prompt-category-btn" data-category="marketing">
+                            <i class="fas fa-bullhorn"></i>
+                            Pazarlama
+                            <span class="count">98</span>
+                        </button>
+                        <button class="prompt-category-btn" data-category="design">
+                            <i class="fas fa-palette"></i>
+                            Tasarım & Görsel
+                            <span class="count">87</span>
+                        </button>
+                        <button class="prompt-category-btn" data-category="business">
+                            <i class="fas fa-chart-line"></i>
+                            İş Geliştirme
+                            <span class="count">76</span>
+                        </button>
+                        <button class="prompt-category-btn" data-category="coding">
+                            <i class="fas fa-code"></i>
+                            Kodlama
+                            <span class="count">64</span>
+                        </button>
+                        <button class="prompt-category-btn" data-category="social">
+                            <i class="fas fa-share-alt"></i>
+                            Sosyal Medya
+                            <span class="count">92</span>
+                        </button>
+                        <button class="prompt-category-btn" data-category="education">
+                            <i class="fas fa-graduation-cap"></i>
+                            Eğitim & Öğretim
+                            <span class="count">58</span>
+                        </button>
+                        <button class="prompt-category-btn" data-category="writing">
+                            <i class="fas fa-feather"></i>
+                            Yaratıcı Yazım
+                            <span class="count">73</span>
+                        </button>
+                        <button class="prompt-category-btn" data-category="analysis">
+                            <i class="fas fa-search"></i>
+                            Analiz & Araştırma
+                            <span class="count">45</span>
+                        </button>
+                        <button class="prompt-category-btn" data-category="automation">
+                            <i class="fas fa-robot"></i>
+                            Otomasyon
+                            <span class="count">82</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="prompts-content">
+                    <div class="prompts-header">
+                        <h3 id="currentPromptCategory">Tüm Prompts</h3>
+                        <div class="prompts-search">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="promptSearch" placeholder="Prompt ara...">
+                        </div>
+                    </div>
+                    
+                    <div class="prompts-grid" id="promptsGrid">
+                        <!-- Prompts will be dynamically loaded -->
+                    </div>
+                    
+                    <div class="load-more-container">
+                        <button class="btn btn-outline" id="loadMorePrompts">
+                            <i class="fas fa-plus"></i>
+                            Daha Fazla Prompt
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">İletişim</h2>
+            <p class="section-subtitle">Geliştirici ile iletişime geçin</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="developer-card">
+                        <div class="developer-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Emircan Kurt</h3>
+                        <p class="developer-title">Full Stack Geliştirici ve Yapay Zeka Araştırmacısı</p>
+                        <p class="developer-description">
+                            Yapay zeka teknolojileri konusunda uzmanlaşmaya çalışıyorum. Genç ve yenilikçi bir geliştiriciyim. 
+                            Bu platformu AI araçlarının Türkiye'de daha yaygın kullanılması için tasarladım.
+                            Not: Bu platformda yer alan araçlar ve prompts, topluluk katkılarıyla sürekli güncellenmektedir. Ve bu nedenle, her zaman en güncel ve etkili araçları bulabilirsiniz.
+                        
+                        </p>
+                        
+                        <div class="contact-links">
+                            <a href="mailto:kurtemircan118@gmail.com" class="contact-link email">
+                                <i class="fas fa-envelope"></i>
+                                <span>kurtemircan118@gmail.com</span>
+                            </a>
+                            <a href="https://discord.gg/ZEkN8Szu" target="_blank" class="contact-link discord">
+                                <i class="fab fa-discord"></i>
+                                <span>Discord Sunucusu</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Mesaj Gönder</h3>
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="name">İsim</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-posta</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Konu</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Konu seçin</option>
+                                <option value="yeni-araç">Yeni Araç Önerisi</option>
+                                <option value="hata">Hata Bildirimi</option>
+                                <option value="işbirliği">İşbirliği Teklifi</option>
+                                <option value="diğer">Diğer</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesaj</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Mesaj Gönder
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-robot"></i>
+                    <span>AI Rehberi</span>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 AI Rehberi. Emircan Kurt tarafından tasarlandı.Not:hala geliştiriyorum</p>
+                    <p>606+ yapay zeka aracı ve 800+ prompt ile AI dünyasını keşfedin.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="mailto:kurtemircan118@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://discord.gg/ZEkN8Szu" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tool Detail Modal -->
+    <div id="toolModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalToolName"></h3>
+                <button class="modal-close" onclick="closeModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="tool-detail">
+                    <div class="tool-meta">
+                        <span class="tool-category" id="modalToolCategory"></span>
+                        <span class="tool-pricing" id="modalToolPricing"></span>
+                    </div>
+                    <p class="tool-description" id="modalToolDescription"></p>
+                    
+                    <div class="tool-features">
+                        <h4>Özellikler:</h4>
+                        <ul id="modalToolFeatures"></ul>
+                    </div>
+                    
+                    <div class="tool-prompts">
+                        <h4>Bu araç için özel prompts:</h4>
+                        <div class="prompts-list" id="modalToolPrompts"></div>
+                    </div>
+                    
+                    <div class="tool-actions">
+                        <a id="modalToolLink" href="#" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            Aracı Kullan
+                        </a>
+                        <button class="btn btn-secondary" onclick="copyToolPrompts()">
+                            <i class="fas fa-copy"></i>
+                            Prompts Kopyala
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
